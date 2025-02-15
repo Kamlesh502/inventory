@@ -14,7 +14,7 @@ export const appConfig: AppConfig = {
   name: 'Inventory',
   github: {
     title: 'Inventory',
-    url: 'https://github.com/kamlesh502/',
+    url: 'https://github.com/Kamlesh502/inventory',
   },
   author: {
     name: 'kamlesh',
