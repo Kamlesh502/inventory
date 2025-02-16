@@ -61,7 +61,10 @@ export default function Dashboard() {
 
     return [
       { label: 'Total Products', value: totalProducts },
-      { label: 'Total Store Value', value: totalStoreValue.toLocaleString() },
+      {
+        label: 'Total Store Value',
+        value: `$ ${totalStoreValue.toLocaleString()} `,
+      },
       { label: 'Out of Stock', value: outOfStock },
       { label: 'No. of Categories', value: noOfCategories },
     ];
@@ -79,7 +82,7 @@ export default function Dashboard() {
             className='bg-green-900 text-white p-6 flex flex-col items-start'
           >
             <CardTitle className='text-lg mb-2'>{stat.label}</CardTitle>
-            <CardContent className='text-3xl font-bold'>
+            <CardContent className='text-3xl font-bold p-0'>
               {stat.value}
             </CardContent>
           </Card>
